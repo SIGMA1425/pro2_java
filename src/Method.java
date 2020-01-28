@@ -4,9 +4,17 @@ public class Method
     {
         System.out.println("add(10, 5) -> " + add(10, 5));
         System.out.println("select_bigger(10.01, 5.94) -> " + select_bigger(10.01, 5.94));
+        System.out.println();
+        
         double[] ary = {4, 6, 3, 7, 5};
+        System.out.println("double[] ary = {4, 6, 3, 7, 5};");
         System.out.println("aryAve(ary) -> " + aryAve(ary));
-        System.out.println("ary = {4, 6, 3, 7, 5}");
+        System.out.println();
+
+        boolean[] maintf = makeBoolArray(5);
+        System.out.println("boolean[] maintf = makeBoolArray(5);");
+        System.out.println("maintf.length -> " + maintf.length);
+        
     }
 
     public static int add(int x, int y)
@@ -29,4 +37,10 @@ public class Method
 
         return sum/dAry.length;
     }
+
+    public static boolean[] makeBoolArray(int size)
+    {
+        boolean[] tf = new boolean[size];
+        return tf;
+    } 
 }
