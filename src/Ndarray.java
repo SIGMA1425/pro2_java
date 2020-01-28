@@ -20,5 +20,32 @@ public class Ndarray
             }
             System.out.println();
         }
+
+        int three[][][] = new int [5][][];
+        for(int i = 0; i<three.length;i++)
+        {
+            three[i] = new int[4][];
+            for(int j=0; j<three[i].length; j++)
+            {
+                three[i][j] = new int [3];
+                for(int k=0; k<three[i][j].length; k++)
+                {
+                    three[i][j][k] = 3*i+2*j+k;
+                }
+            }
+        }
+
+        for(int i=0; i<three.length; i++)
+        {
+            for(int j=0; j<three[i].length; j++)
+            {
+                for(int k=0; k<three[i][j].length; k++)
+                {
+                    System.out.print(three[i][j][k]);
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
     }
 }
